@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - BuildZone
+  - decrease
+  - increase
+  - Section
+  - lose
+  - coaster
+  - Cuttable
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3062364205
+    locked: 0
+  - name: Supports
+    uniqueID: 595455833
+    locked: 0
+  - name: Inventory
+    uniqueID: 2516435137
+    locked: 0
+  - name: Track
+    uniqueID: 1266543385
+    locked: 0
+  - name: BuildZone
+    uniqueID: 2698408331
+    locked: 0
+  - name: Pieces
+    uniqueID: 3534597045
+    locked: 0
+  - name: Coaster
+    uniqueID: 1091072793
+    locked: 0
+  - name: MovingPieces
+    uniqueID: 3363938005
+    locked: 0
+  - name: Effects
+    uniqueID: 964437351
+    locked: 0
+  - name: UI
+    uniqueID: 3966375629
+    locked: 0
