@@ -11,6 +11,7 @@ public class MenuController : MonoBehaviour
     [SerializeField] private GameObject optionsMenu;
     [SerializeField] private GameObject gameSettingsMenu;
     [SerializeField] private GameObject instructionsMenu;
+    [SerializeField] private GameObject creditsMenu;
     [SerializeField] private GameObject endgameMenu;
     [SerializeField] private GameObject wonMenu;
     [SerializeField] private GameObject lostMenu;
@@ -113,6 +114,12 @@ public class MenuController : MonoBehaviour
         startMenu.SetActive(false);
     }
 
+    public void CreditsClick()
+    {
+        creditsMenu.SetActive(true);
+        startMenu.SetActive(false);
+    }
+
     public void OptionsClick()
     {
         optionsMenu.SetActive(true);
@@ -125,6 +132,7 @@ public class MenuController : MonoBehaviour
         CoasterManager.Instance.ResetToStartPosition();
         startMenu.SetActive(true);
         optionsMenu.SetActive(false);
+        creditsMenu.SetActive(false);
         endgameMenu.SetActive(false);
         gameSettingsMenu.SetActive(false);
     }

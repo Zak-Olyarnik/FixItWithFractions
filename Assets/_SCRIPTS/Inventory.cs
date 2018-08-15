@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour
 {
     static private Inventory instance;      // instance of the GameController
     [SerializeField] private Text[] countTexts;
+    [SerializeField] private GameObject[] infs;
     public Piece[] pieces;
     private int[] counts = new int[9];
 
@@ -58,8 +59,10 @@ public class Inventory : MonoBehaviour
         for (int i = 0; i < counts.Length; i++)
         {
             counts[i] = -1;
-            countTexts[i].text = "\u221E";   // infinity symbol
-            countTexts[i].fontSize = 95;
+            //countTexts[i].text = "\u221E";   // infinity symbol
+            //countTexts[i].fontSize = 95;
+            // infinity symbol will not display in web builds
+            infs[i].SetActive(true);
         }
     }
 
